@@ -1,5 +1,3 @@
-# OPTIM Agent Simulator 
-
 import os,time
 class agent:
     def report(self,params):
