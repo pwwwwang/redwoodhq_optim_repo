@@ -33,8 +33,24 @@ class Browser{
       }
       else{
 		System.setProperty("webdriver.gecko.driver", "geckodriver.exe")
+          
+        if(params."Browser Version"  == '57')
+          {
+              println 57
+              System.setProperty("webdriver.firefox.bin","D:\\Firefox57\\firefox.exe")
+          }
+        else if(params."Browser Version" == '70')
+          {
+              println 70
+              System.setProperty("webdriver.firefox.bin","C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe")
+          }
+        
+        //else
+         //{
+          //  System.setProperty("webdriver.firefox.bin","C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe")
+//         }
+        
       }
-
       Driver = new FirefoxDriver()
     }
     else if (params."Browser Type" == "Chrome"){

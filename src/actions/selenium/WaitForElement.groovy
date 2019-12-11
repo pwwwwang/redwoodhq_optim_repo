@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement
 
 class WaitForElement{
   public void run (def params){
-    
     int count = params."Timeout In Seconds".toInteger()
     while(count >= 0){
       def elements = Elements.findAll(params,Browser.Driver)
